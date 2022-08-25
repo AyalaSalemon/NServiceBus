@@ -1,0 +1,12 @@
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\bin\Debug\net6.0\Messages.deps.json
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\bin\Debug\net6.0\Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\bin\Debug\net6.0\ref\Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\bin\Debug\net6.0\Messages.pdb
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.csproj.AssemblyReference.cache
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.AssemblyInfoInputs.cache
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.AssemblyInfo.cs
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.csproj.CoreCompileInputs.cache
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\ref\Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\CommandMessages\obj\Debug\net6.0\Messages.pdb

@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "d7ed08f6-42b4-4cb7-8d7a-aefa00ad5de9",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "f0621ea9-d810-4f58-815a-aefa00ad57a2",
+  "NServiceBus.ConversationId": "d792f5b2-8cc2-4811-8808-aefa00ad57a6",
+  "NServiceBus.CorrelationId": "f0621ea9-d810-4f58-815a-aefa00ad57a2",
+  "NServiceBus.ReplyToAddress": "Billing",
+  "NServiceBus.OriginatingMachine": "DESKTOP-U0RRRP1",
+  "NServiceBus.OriginatingEndpoint": "Billing",
+  "$.diagnostics.originating.hostid": "522552136478d31998f4fa3b45c6529a",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "Messages.Events.CreditCardCharged, Billing.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.7.4",
+  "NServiceBus.TimeSent": "2022-08-23 10:31:12:570136 Z",
+  "NServiceBus.ProcessingStarted": "2022-08-23 12:14:18:884902 Z",
+  "NServiceBus.ProcessingEnded": "2022-08-23 12:14:19:045076 Z",
+  "$.diagnostics.hostid": "facb599630cda65de044a959604f7b67",
+  "$.diagnostics.hostdisplayname": "DESKTOP-U0RRRP1",
+  "NServiceBus.ProcessingMachine": "DESKTOP-U0RRRP1",
+  "NServiceBus.ProcessingEndpoint": "Receipts"
+}

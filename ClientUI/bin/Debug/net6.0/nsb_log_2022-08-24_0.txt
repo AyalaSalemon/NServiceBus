@@ -1,0 +1,2 @@
+﻿2022-08-24 12:54:44.842 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-24 12:54:45.667 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.

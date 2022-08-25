@@ -1,0 +1,149 @@
+﻿2022-08-25 13:00:14.613 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:00:15.020 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:33:16.853 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:33:17.834 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:34:34.029 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:34:34.845 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:37:16.825 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:37:17.401 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:44:54.282 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:44:55.068 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:52:10.028 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 13:52:10.667 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 14:32:42.166 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 14:32:42.845 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 14:43:54.246 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 14:43:55.392 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:30:25.622 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 17:30:26.055 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:30:41.113 ERROR Could not complete the installation. 
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 69
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 45
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-25 17:32:56.388 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 17:32:57.053 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:33:11.976 ERROR Could not complete the installation. 
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at NServiceBus.Persistence.Sql.ScriptRunner.ExecuteInSeparateConnection[T](Func`6 installAction, String scriptDirectory, String tablePrefix, SqlDialect sqlDialect, Func`2 connectionBuilder) in /_/src/SqlPersistence/ScriptRunner.cs:line 69
+   at NServiceBus.Persistence.Sql.ScriptRunner.Install(SqlDialect sqlDialect, String tablePrefix, Func`2 connectionBuilder, String scriptDirectory, Boolean shouldInstallOutbox, Boolean shouldInstallSagas, Boolean shouldInstallSubscriptions, Boolean shouldInstallTimeouts) in /_/src/SqlPersistence/ScriptRunner.cs:line 45
+   at SqlPersistenceInstaller.Install(String identity) in /_/src/SqlPersistence/NeedToInstallSomething.cs:line 30
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-25 17:34:42.339 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 17:34:42.927 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:35:13.396 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 17:35:14.189 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:35:33.050 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-25 17:35:33.050 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-25 17:35:33.050 INFO  Received Credit Card Information, CreditCardNumber = jghfjhg
+2022-08-25 17:56:44.215 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 17:56:44.722 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:00:18.770 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:00:19.558 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:00:21.266 INFO  Received Credit Card Information, CreditCardNumber = kjhgk
+2022-08-25 18:00:52.836 INFO  Received Credit Card Information, CreditCardNumber = ADSK
+2022-08-25 18:04:06.448 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:05:21.791 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:05:31.942 INFO  Received Credit Card Information, CreditCardNumber = HJGF
+2022-08-25 18:09:48.679 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:09:49.251 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:10:16.943 INFO  Received Credit Card Information, CreditCardNumber = hgfdh
+2022-08-25 18:12:39.660 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:12:40.205 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:12:46.102 INFO  Received Credit Card Information, CreditCardNumber = kjhgk
+2022-08-25 18:21:26.345 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:21:26.938 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:21:38.858 INFO  Received Credit Card Information, CreditCardNumber = kljhl
+2022-08-25 18:26:40.445 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:26:41.065 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:24.083 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:27:24.844 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:25.796 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:27:57.233 INFO  Received Credit Card Information, CreditCardNumber = ךליע
+2022-08-25 18:37:06.164 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:37:06.784 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:37:07.600 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:37:16.583 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-25 18:39:01.926 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:39:02.651 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:39:03.503 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:39:10.523 INFO  Received Credit Card Information, CreditCardNumber = hfdhg
+2022-08-25 18:52:52.045 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 18:52:52.611 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:52:52.644 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:52:53.475 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:53:01.412 INFO  Received Credit Card Information, CreditCardNumber = asedfs
+2022-08-25 20:57:27.772 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 20:57:28.151 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:57:28.184 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:57:28.966 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:57:49.800 INFO  Received Credit Card Information, CreditCardNumber = 0987 0987 0987 7654
+2022-08-25 20:58:49.311 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 20:58:50.021 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:58:50.052 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:58:50.875 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:59:02.034 INFO  Received Credit Card Information, CreditCardNumber = asdf 1234
+2022-08-25 21:02:15.562 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 21:02:16.370 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:02:16.418 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:02:17.222 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:02:30.577 INFO  Received Credit Card Information, CreditCardNumber = 9876
+2022-08-25 21:03:58.340 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:59.183 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:03:59.228 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:04:00.250 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:04:05.639 INFO  Received Credit Card Information
+2022-08-25 21:04:05.643 INFO  Credit Card Number is: **** **** **** 1234
+2022-08-25 21:04:05.647 INFO  Publishing creditCardCharged
+2022-08-25 21:05:24.626 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 21:05:25.306 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:05:25.357 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:05:26.295 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:05:33.916 INFO  Received Credit Card Information
+2022-08-25 21:05:33.922 INFO  Credit Card Number is: **** **** **** 4321
+2022-08-25 21:05:33.928 INFO  Publishing creditCardCharged
+2022-08-25 21:07:21.114 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 21:07:22.203 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:07:22.275 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:07:24.467 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:07:26.164 INFO  Received Credit Card Information
+2022-08-25 21:07:26.168 INFO  Credit Card Number is: **** **** **** 9876
+2022-08-25 21:07:26.171 INFO  Publishing creditCardCharged
+2022-08-25 21:09:49.633 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-25 21:09:50.303 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:09:50.341 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:09:51.230 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:09:57.359 INFO  Received chargeCreditCard
+2022-08-25 21:09:57.362 INFO  Credit Card Number is: **** **** **** 1234
+2022-08-25 21:09:57.366 INFO  Publishing creditCardCharged

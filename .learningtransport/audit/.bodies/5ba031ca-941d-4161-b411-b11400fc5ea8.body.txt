@@ -1,0 +1,1 @@
+<?xml version="1.0"?><ReceiptSent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Receipt.Messages"><ReceiptId>58bffbb3-96c3-4362-bd05-a4081e7422bc</ReceiptId><Content>A Receipt</Content></ReceiptSent>

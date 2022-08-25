@@ -1,0 +1,162 @@
+﻿2022-08-25 13:00:14.118 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 13:00:14.627 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:33:15.765 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 13:33:17.204 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:52:31.096 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 13:52:31.994 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:53:24.424 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 13:53:25.077 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 14:19:32.211 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 14:19:32.743 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 14:24:27.833 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 14:24:28.225 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 14:30:34.787 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 14:30:35.343 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 15:31:35.079 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 15:31:35.512 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 15:36:14.860 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 15:36:15.331 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 15:36:39.272 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 15:36:39.795 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:20:49.671 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:20:49.950 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:20:50.291 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:21:06.517 INFO  Sending ChargeCreditCard command, OrderId = de2a0e59-9035-4334-94c1-72977ee4ba7a , Credit Card Number =jhgf
+2022-08-25 17:22:12.275 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:22:13.006 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:22:13.727 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:22:27.182 INFO  Sending ChargeCreditCard command, OrderId = b8a3d6d7-f804-4dc3-8e98-a3e54888d0a3 , Credit Card Number =jhgf
+2022-08-25 17:26:57.061 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:26:57.667 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:26:58.107 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:27:56.873 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:27:57.408 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:27:57.829 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:28:07.021 INFO  Sending ChargeCreditCard command, OrderId = c9a2b9e6-8d42-4157-84a3-077d96d314de , Credit Card Number =2345
+2022-08-25 17:28:28.584 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:28:29.144 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:28:29.644 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:28:38.872 INFO  Sending ChargeCreditCard command, OrderId = 9b795e57-1161-4bca-869e-d099c5567e7c , Credit Card Number =asdf
+2022-08-25 17:30:21.087 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:30:22.157 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:30:22.790 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:30:38.337 INFO  Sending ChargeCreditCard command, OrderId = 621c1060-628c-4426-96ae-649f136e0f16 , Credit Card Number =asdf
+2022-08-25 17:31:14.132 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:31:48.359 INFO  Sending ChargeCreditCard command, OrderId = 55609c56-603c-4ece-bcae-72081536da1a , Credit Card Number =jghfjhg
+2022-08-25 17:31:50.516 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:32:54.530 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:32:55.644 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:32:56.679 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:33:03.859 INFO  Sending ChargeCreditCard command, OrderId = d3aa7f36-945c-4cd7-9a0a-9dfd90ad93a0 , Credit Card Number =asdf
+2022-08-25 17:33:06.083 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:33:59.274 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:34:00.239 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:34:40.436 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:34:41.717 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:34:42.769 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:35:12.087 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:35:12.799 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:35:14.004 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:56:42.839 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 17:56:43.656 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:56:44.583 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 17:56:55.865 INFO  Sending ChargeCreditCard command, OrderId = 54e52505-fd28-4f29-beeb-fcfc53d33e93 , Credit Card Number =kjhgk
+2022-08-25 17:56:58.066 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:00:18.238 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:00:19.081 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:00:20.063 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:00:32.580 INFO  Sending ChargeCreditCard command, OrderId = a24aa556-2d08-477c-bfb1-cede0520c8bc , Credit Card Number =ADSK
+2022-08-25 18:00:42.513 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:00:57.080 INFO  Unknown input. Please try again.
+2022-08-25 18:00:57.084 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:04:05.688 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:04:06.427 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:04:07.113 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:04:19.533 INFO  Sending ChargeCreditCard command, OrderId = 1fde8cd4-6edc-47f1-97a1-1c04b21d096b , Credit Card Number =HJGF
+2022-08-25 18:04:22.751 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:09:47.558 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:09:48.300 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:09:49.168 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:10:02.066 INFO  Sending ChargeCreditCard command, OrderId = abb44696-b59d-49e8-98bb-0c414c620e5d , Credit Card Number =hgfdh
+2022-08-25 18:10:02.197 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:12:38.740 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:12:39.506 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:12:40.245 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:12:45.827 INFO  Sending ChargeCreditCard command, OrderId = 938f75a8-8111-4a9b-bfef-56379a10382d , Credit Card Number =kjhgk
+2022-08-25 18:12:45.957 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:21:25.372 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:21:26.129 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:21:26.778 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:21:38.358 INFO  Sending ChargeCreditCard command, OrderId = 73290de1-5f0e-4e8e-8f44-8cb4a5a496fe , Credit Card Number =kljhl
+2022-08-25 18:21:38.481 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:26:38.721 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:26:39.900 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:26:40.998 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:27:22.995 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:27:23.993 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:24.738 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:27:56.873 INFO  Sending ChargeCreditCard command, OrderId = 1ee54365-8642-4ae7-84ca-57135a9fda52 , Credit Card Number =ךליע
+2022-08-25 18:27:57.021 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:28:01.611 INFO  Unknown input. Please try again.
+2022-08-25 18:28:01.613 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:37:05.253 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:37:06.029 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:37:06.661 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:37:16.273 INFO  Sending ChargeCreditCard command, OrderId = 84d36c7b-59dc-416e-ba64-1d55da73f1ec , Credit Card Number =asdf
+2022-08-25 18:37:16.404 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:37:19.296 INFO  Unknown input. Please try again.
+2022-08-25 18:37:19.298 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:39:00.749 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:39:01.770 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:39:02.608 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:39:10.239 INFO  Sending ChargeCreditCard command, OrderId = a2eaebdf-8d85-44c8-b091-0bfbe372ddae , Credit Card Number =hfdhg
+2022-08-25 18:39:10.357 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:39:15.224 INFO  Unknown input. Please try again.
+2022-08-25 18:39:15.229 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:52:50.517 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 18:52:51.631 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:52:52.385 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:53:01.109 INFO  Sending ChargeCreditCard command, OrderId = a228e8cb-e162-47fb-bb51-bc91735239f1 , Credit Card Number =asedfs
+2022-08-25 18:53:01.240 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 18:53:05.339 INFO  Unknown input. Please try again.
+2022-08-25 18:53:05.343 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 20:57:27.058 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 20:57:27.692 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:57:28.116 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 20:57:49.511 INFO  Sending ChargeCreditCard command, OrderId = dc514509-3d00-4e32-8c2b-ba8a233d6910 , Credit Card Number =0987 0987 0987 7654
+2022-08-25 20:57:49.639 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 20:58:48.589 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 20:58:49.350 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:58:50.135 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 20:58:51.799 INFO  Unknown input. Please try again.
+2022-08-25 20:58:51.804 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 20:59:01.749 INFO  Sending ChargeCreditCard command, OrderId = 3fb5b707-6199-4bcb-9300-92667bd632e0
+2022-08-25 20:59:01.888 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:02:14.972 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:02:15.738 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:02:16.543 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:02:30.262 INFO  Sending ChargeCreditCard command, OrderId = 8a9c0815-6958-4f7f-8ba3-036d39225d15
+2022-08-25 21:02:30.404 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:03:41.344 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:41.629 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:03:42.052 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:03:57.999 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:58.696 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:03:59.439 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:04:05.325 INFO  Sending ChargeCreditCard command, OrderId = 85f685c0-12e0-4b2f-9912-dec1fa9d6170
+2022-08-25 21:04:05.479 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:05:24.051 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:05:24.990 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:05:25.715 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:05:33.637 INFO  Sending ChargeCreditCard command, OrderId = 1bf760cf-1c54-4df4-ab40-a0328b33f59a
+2022-08-25 21:05:33.762 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:07:19.770 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:07:20.753 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:07:21.583 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:07:25.838 INFO  Sending ChargeCreditCard command, OrderId = 5d21167f-566c-461f-9042-85f74fd6fafe
+2022-08-25 21:07:25.975 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:09:49.025 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\ClientUI\bin\Debug\net6.0\' with level Info
+2022-08-25 21:09:49.728 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:09:50.439 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-25 21:09:57.052 INFO  Sending ChargeCreditCard command, OrderId = 4b8ca6ea-fbe5-4812-9be2-075055ca4761
+2022-08-25 21:09:57.193 INFO  Press 'C' to charge your card, or 'Q' to quit.

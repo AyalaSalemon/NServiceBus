@@ -1,0 +1,1 @@
+<?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>b3a53c41-e923-4eb5-bf8c-178cf6ff7210</OrderId><CreditCardNumber>sasdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>

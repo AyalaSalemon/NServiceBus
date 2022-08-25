@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e1f33cdd-b00b-4cdc-9668-3314c541a1e4": {
+      "ProjectGuid": "e1f33cdd-b00b-4cdc-9668-3314c541a1e4",
+      "DisplayName": "Billing",
+      "ColorIndex": 0
+    },
+    "d8852472-2867-4ef7-b2ee-d09e5fb61a97": {
+      "ProjectGuid": "d8852472-2867-4ef7-b2ee-d09e5fb61a97",
+      "DisplayName": "Messages",
+      "ColorIndex": 1
+    },
+    "11b9f416-13a7-45ab-9d5d-4ac1417bb537": {
+      "ProjectGuid": "11b9f416-13a7-45ab-9d5d-4ac1417bb537",
+      "DisplayName": "Receipts",
+      "ColorIndex": 2
+    },
+    "4e1e60ac-2be5-4900-91bf-477993585f9a": {
+      "ProjectGuid": "4e1e60ac-2be5-4900-91bf-477993585f9a",
+      "DisplayName": "Billing.Messages",
+      "ColorIndex": 3
+    },
+    "18be9b68-9acd-43a7-9bcb-210788b4891f": {
+      "ProjectGuid": "18be9b68-9acd-43a7-9bcb-210788b4891f",
+      "DisplayName": "Receipt.Messages",
+      "ColorIndex": 4
+    },
+    "64036625-6a5c-41d8-903d-4eda77236367": {
+      "ProjectGuid": "64036625-6a5c-41d8-903d-4eda77236367",
+      "DisplayName": "Shipping",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 6
+}

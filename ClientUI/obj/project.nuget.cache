@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "ccH0MAvjcSebQOxtUTfySzkGjzA3QOa6tvl0Dnk9YUjxbVJI/3HKtGOrpsC0NmB03uHBSEGEDhrB9j8TYX9ZeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\א\\Desktop\\bootcamp\\week 8\\NServiceBass\\NServiceBass\\ClientUI\\ClientUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\א\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\nservicebus\\7.7.4\\nservicebus.7.7.4.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\nservicebus.rabbitmq\\7.0.0\\nservicebus.rabbitmq.7.0.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.reflection.metadata\\1.8.1\\system.reflection.metadata.1.8.1.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.cryptography.xml\\4.7.0\\system.security.cryptography.xml.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
+    "C:\\Users\\א\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

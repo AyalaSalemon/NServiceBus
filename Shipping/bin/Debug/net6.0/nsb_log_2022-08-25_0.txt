@@ -1,0 +1,85 @@
+﻿2022-08-25 13:00:14.120 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 13:00:14.471 INFO  Auditing processed messages to 'audit'
+2022-08-25 13:00:14.536 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:33:17.389 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 13:33:18.386 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:30:23.887 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:30:24.327 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:32:55.765 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:32:56.904 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:33:59.783 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:34:41.797 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:34:42.956 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:35:12.548 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:35:13.973 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:56:43.218 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 17:56:44.353 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:00:18.527 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:00:19.636 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:04:06.310 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:04:07.104 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:05:33.506 INFO  Received Receipt Sent, ReceiptId = efea3524-cdf3-4403-9db0-005e4ec274fd , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:09:47.950 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:09:48.861 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:10:24.363 INFO  Received Receipt Sent, ReceiptId = cf822629-60dd-4f5a-9471-81fab2114efb , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:12:39.446 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:12:40.279 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:12:47.044 INFO  Received Receipt Sent, ReceiptId = 6b68c9ac-ce63-4d9a-bfd3-26a90a3e8fb8 , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:21:26.098 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:21:26.804 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:21:39.700 INFO  Received Receipt Sent, ReceiptId = 7087d241-ee14-4a84-8724-3b80000d6e12 , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:26:39.149 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:26:40.757 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:23.276 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:27:24.234 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:58.458 INFO  Received Receipt Sent, ReceiptId = bd4fe9cf-c6e1-4b09-b1b4-0e14abe97397 , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:37:05.652 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:37:06.449 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:37:17.743 INFO  Received Receipt Sent, ReceiptId = 432e6f73-6fcf-49fc-878f-3a7ed3c80130 , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:39:01.417 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:39:02.475 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:39:11.565 INFO  Received Receipt Sent, ReceiptId = 1069f1c6-99b6-4d5a-a751-62b48def1977 , Content = A Receipt - Shipping the stuff...
+2022-08-25 18:52:51.695 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 18:52:52.457 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:52:52.519 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:52:53.341 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:53:02.668 INFO  Received Receipt Sent, ReceiptId = 81fca16d-ddb7-4cc1-bb81-b977178ddada , Content = A Receipt - Shipping the stuff...
+2022-08-25 20:57:26.890 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 20:57:27.620 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:57:27.693 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:57:28.698 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:57:51.068 INFO  Received Receipt Sent, ReceiptId = 216221cd-4b58-45ea-aaec-8a7f76d33017 , Content = A Receipt - Shipping the stuff...
+2022-08-25 20:58:49.270 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 20:58:50.094 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:58:50.136 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:58:51.164 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:59:03.162 INFO  Received Receipt Sent, ReceiptId = b631ddd6-cb55-4eef-8f27-68c0715976af , Content = A Receipt - Shipping the stuff...
+2022-08-25 21:02:15.450 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:02:16.366 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:02:16.443 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:02:17.298 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:02:31.507 INFO  Received Receipt Sent, ReceiptId = 9361ec86-9845-417e-bdca-d20a66a16441 , Content = A Receipt - Shipping the stuff...
+2022-08-25 21:03:49.968 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:50.492 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:03:50.533 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:03:51.224 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:03:58.399 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:59.307 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:03:59.389 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:04:00.386 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:04:06.555 INFO  Received Receipt Sent, ReceiptId = 4962811e-dfe0-4cdf-83b3-4953bbf9f880 , Content = A Receipt - Shipping the stuff...
+2022-08-25 21:05:25.083 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:05:25.791 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:05:25.839 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:05:26.632 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:05:34.828 INFO  Received Receipt Sent, ReceiptId = 6e38098c-7865-49df-9a12-b99d02d1915e , Content = A Receipt - Shipping the stuff...
+2022-08-25 21:07:22.162 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:07:23.645 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:07:23.914 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:07:25.129 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:07:27.253 INFO  Received Receipt Sent, ReceiptId = bf0d064b-7567-4095-b878-5264bfada210 , Content = A Receipt - Shipping the stuff...
+2022-08-25 21:09:49.526 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\' with level Info
+2022-08-25 21:09:50.344 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:09:50.390 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:09:51.578 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Shipping\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:09:58.466 INFO  Received Receipt Sent, ReceiptId = 8c3f7aa4-e5f1-4a5b-a0f2-1e6345050431 , Content = A Receipt - Shipping the stuff...

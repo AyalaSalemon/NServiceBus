@@ -1,0 +1,58 @@
+﻿2022-08-23 15:14:18.206 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 15:14:18.418 INFO  Auditing processed messages to 'audit'
+2022-08-23 15:14:18.441 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:14:18.971 INFO  Received Credit Card Charged, OrderId = 65892fad-36e0-4e34-9bd9-d2e503bc9159 - Sending Receipt...
+2022-08-23 15:15:02.766 INFO  Received Credit Card Charged, OrderId = 7e5360ce-1948-4d16-b9fd-e376481fd709 - Sending Receipt...
+2022-08-23 15:23:12.445 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 15:23:12.621 INFO  Auditing processed messages to 'audit'
+2022-08-23 15:23:12.654 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:25:12.985 INFO  Initiating shutdown.
+2022-08-23 15:25:13.016 INFO  Shutdown complete.
+2022-08-23 15:33:01.732 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 15:33:01.928 INFO  Auditing processed messages to 'audit'
+2022-08-23 15:33:01.960 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:33:16.817 INFO  Received Credit Card Charged, OrderId = dfd156fb-aaef-4e82-bf2a-ef9fa2ea27f8 - Sending Receipt...
+2022-08-23 16:50:03.880 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 16:50:04.257 INFO  Auditing processed messages to 'audit'
+2022-08-23 16:50:04.305 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 16:50:14.106 INFO  Received Credit Card Charged, OrderId = 0c67b190-6dd3-4031-b905-e96f62fd83be - Sending Receipt...
+2022-08-23 16:57:24.729 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 16:57:24.907 INFO  Auditing processed messages to 'audit'
+2022-08-23 16:57:24.930 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 17:00:26.294 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 17:00:26.546 INFO  Auditing processed messages to 'audit'
+2022-08-23 17:00:26.577 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 17:03:14.516 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 17:03:14.754 INFO  Auditing processed messages to 'audit'
+2022-08-23 17:03:14.784 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 17:04:58.046 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:28:48.898 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:28:49.088 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:28:49.120 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:31:33.786 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:31:33.977 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:31:34.004 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:35:24.284 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:35:24.490 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:35:24.516 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:40:02.174 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:40:02.594 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:40:02.645 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:41:25.531 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:41:25.810 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:41:25.838 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:44:21.980 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:44:22.253 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:44:22.284 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:44:45.894 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:44:46.117 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:44:46.168 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:45:58.851 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:45:59.172 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:45:59.209 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:49:04.148 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:49:04.521 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:49:04.563 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:49:25.973 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-23 18:49:26.287 INFO  Auditing processed messages to 'audit'
+2022-08-23 18:49:26.319 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.

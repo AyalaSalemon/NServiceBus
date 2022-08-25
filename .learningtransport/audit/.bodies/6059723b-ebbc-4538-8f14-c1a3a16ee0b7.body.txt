@@ -1,0 +1,1 @@
+<?xml version="1.0"?><CreditCardCharged xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Messages.Events"><OrderId>7686da6b-8f0d-4a6a-bbce-3061dd89b0c7</OrderId><CreditCardNumber>000</CreditCardNumber></CreditCardCharged>

@@ -1,0 +1,361 @@
+﻿2022-08-22 17:00:42.206 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-22 17:00:42.443 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-22 17:00:43.031 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:10:57.547 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-22 17:10:57.911 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-22 17:10:58.357 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:11:09.495 INFO  Sending ChargeCreditCard command, OrderId = 81ef7890-9fe7-48d3-9abf-836ae5a05e68 , Credit Card Number =asd
+2022-08-22 17:11:09.630 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:11:14.075 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:09:779307 Z
+	Handler failure time: 2022-08-22 14:11:14:054661 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:15.543 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:14:149969 Z
+	Handler failure time: 2022-08-22 14:11:15:539516 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:16.475 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:15:589632 Z
+	Handler failure time: 2022-08-22 14:11:16:473769 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:17.199 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:16:513403 Z
+	Handler failure time: 2022-08-22 14:11:17:198049 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:17.914 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:17:236759 Z
+	Handler failure time: 2022-08-22 14:11:17:913258 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:18.424 WARN  Delayed Retry will reschedule message '0b01cdb6-2892-4edb-a705-aef900e9c714' after a delay of 00:00:10 because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:17:961147 Z
+	Handler failure time: 2022-08-22 14:11:18:414572 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: e8d804a4-35d0-4517-a672-59c933224a1e
+2022-08-22 17:11:31.267 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:29:515645 Z
+	Handler failure time: 2022-08-22 14:11:31:266202 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:11:31.603 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:31:306730 Z
+	Handler failure time: 2022-08-22 14:11:31:601949 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:11:31.924 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:31:645020 Z
+	Handler failure time: 2022-08-22 14:11:31:922989 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:11:32.249 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:31:953298 Z
+	Handler failure time: 2022-08-22 14:11:32:247940 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:11:32.576 INFO  Immediate Retry is going to retry message '0b01cdb6-2892-4edb-a705-aef900e9c714' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:32:291016 Z
+	Handler failure time: 2022-08-22 14:11:32:575011 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:11:33.577 ERROR Moving message '0b01cdb6-2892-4edb-a705-aef900e9c714' to the error queue 'error' because processing failed due to an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:11:32:613095 Z
+	Handler failure time: 2022-08-22 14:11:33:571575 Z
+	Message ID: 0b01cdb6-2892-4edb-a705-aef900e9c714
+	Transport message ID: b7743b3f-bb00-4678-93f4-d8401ddc898a
+2022-08-22 17:12:59.838 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-22 17:13:00.399 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-22 17:13:00.972 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:13:10.630 INFO  Sending ChargeCreditCard command, OrderId = c81ff7af-406f-47eb-bb26-96f016733c3e , Credit Card Number =adf
+2022-08-22 17:13:10.772 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:13:14.891 INFO  Immediate Retry is going to retry message 'b3d2ff94-ef65-4ec4-935d-aef900ea5508' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:13:10:932618 Z
+	Handler failure time: 2022-08-22 14:13:14:872161 Z
+	Message ID: b3d2ff94-ef65-4ec4-935d-aef900ea5508
+	Transport message ID: 8b3c95e4-9ac5-442b-8c38-8255ec0de602
+2022-08-22 17:13:16.412 WARN  Delayed Retry will reschedule message 'b3d2ff94-ef65-4ec4-935d-aef900ea5508' after a delay of 00:00:10 because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:13:14:958970 Z
+	Handler failure time: 2022-08-22 14:13:16:403407 Z
+	Message ID: b3d2ff94-ef65-4ec4-935d-aef900ea5508
+	Transport message ID: 8b3c95e4-9ac5-442b-8c38-8255ec0de602
+2022-08-22 17:13:29.410 INFO  Immediate Retry is going to retry message 'b3d2ff94-ef65-4ec4-935d-aef900ea5508' because of an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:13:27:520380 Z
+	Handler failure time: 2022-08-22 14:13:29:408585 Z
+	Message ID: b3d2ff94-ef65-4ec4-935d-aef900ea5508
+	Transport message ID: 370ea4f8-1c5c-48c0-b5c8-835c2ca66809
+2022-08-22 17:13:30.481 ERROR Moving message 'b3d2ff94-ef65-4ec4-935d-aef900ea5508' to the error queue 'error' because processing failed due to an exception:
+System.Exception: it is on porpose
+   at ClientUI.ChargeCreditCardHandler.Handle(ChargeCreditCard message, IMessageHandlerContext context) in C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\ChargeCreditCardHandler.cs:line 18
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 19
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message type: ClientUI.ChargeCreditCard
+	Handler type: ClientUI.ChargeCreditCardHandler
+	Handler start time: 2022-08-22 14:13:29:450896 Z
+	Handler failure time: 2022-08-22 14:13:30:476440 Z
+	Message ID: b3d2ff94-ef65-4ec4-935d-aef900ea5508
+	Transport message ID: 370ea4f8-1c5c-48c0-b5c8-835c2ca66809
+2022-08-22 17:13:37.125 INFO  Unknown input. Please try again.
+2022-08-22 17:13:37.128 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-22 17:13:39.026 INFO  Initiating shutdown.
+2022-08-22 17:13:39.048 INFO  Shutdown complete.

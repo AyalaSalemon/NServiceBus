@@ -1,0 +1,1483 @@
+﻿2022-08-23 10:04:24.785 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 10:04:25.293 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 10:04:25.721 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 10:04:38.814 INFO  Sending ChargeCreditCard command, OrderId = e6b3143e-6968-4526-b96c-d82dfa6a864b , Credit Card Number =asdf
+2022-08-23 10:04:39.015 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 10:04:54.193 INFO  Immediate Retry is going to retry message 'd5c5cc44-506d-4afa-bec8-aefa0074a1ff' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at SynchronizedStorage.OpenSession(ContextBag contextBag) in /_/src/SqlPersistence/SynchronizedStorage/SynchronizedStorage.cs:line 20
+   at NServiceBus.LoadHandlersConnector.AdaptOrOpenNewSynchronizedStorageSession(TransportTransaction transportTransaction, OutboxTransaction outboxTransaction, ContextBag contextBag) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 63
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 28
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: d5c5cc44-506d-4afa-bec8-aefa0074a1ff
+	Transport message ID: c4f1201a-9155-415d-a9d4-2379408cdbc1
+2022-08-23 10:04:54.432 WARN  Delayed Retry will reschedule message 'd5c5cc44-506d-4afa-bec8-aefa0074a1ff' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at SynchronizedStorage.OpenSession(ContextBag contextBag) in /_/src/SqlPersistence/SynchronizedStorage/SynchronizedStorage.cs:line 20
+   at NServiceBus.LoadHandlersConnector.AdaptOrOpenNewSynchronizedStorageSession(TransportTransaction transportTransaction, OutboxTransaction outboxTransaction, ContextBag contextBag) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 63
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 28
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: d5c5cc44-506d-4afa-bec8-aefa0074a1ff
+	Transport message ID: c4f1201a-9155-415d-a9d4-2379408cdbc1
+2022-08-23 10:12:18.963 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 10:12:19.365 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 10:12:19.858 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 10:12:30.973 INFO  Sending ChargeCreditCard command, OrderId = 8e977eee-f300-41da-9bd9-5fe0ee1bd391 , Credit Card Number =jhgf
+2022-08-23 10:12:31.050 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 10:12:34.120 INFO  Initiating shutdown.
+2022-08-23 10:12:35.131 INFO  Immediate Retry is going to retry message 'd5c5cc44-506d-4afa-bec8-aefa0074a1ff' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at SynchronizedStorage.OpenSession(ContextBag contextBag) in /_/src/SqlPersistence/SynchronizedStorage/SynchronizedStorage.cs:line 20
+   at NServiceBus.LoadHandlersConnector.AdaptOrOpenNewSynchronizedStorageSession(TransportTransaction transportTransaction, OutboxTransaction outboxTransaction, ContextBag contextBag) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 63
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 28
+   at CurrentSessionBehavior.Invoke(IIncomingLogicalMessageContext context, Func`1 next) in /_/src/SqlPersistence/SynchronizedStorage/CurrentSessionBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: d5c5cc44-506d-4afa-bec8-aefa0074a1ff
+	Transport message ID: f49ed346-6810-49c7-ad5a-5443b7792be3
+2022-08-23 10:12:35.222 INFO  Shutdown complete.
+2022-08-23 10:57:20.664 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 10:57:21.255 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 10:57:21.802 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 10:57:31.400 INFO  Sending ChargeCreditCard command, OrderId = 68b3f29b-80ca-4434-89a7-fbcaa6c066a1 , Credit Card Number =asdf
+2022-08-23 10:57:31.492 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:05.545 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:33:05.910 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:33:06.207 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:06.211 INFO  Unknown input. Please try again.
+2022-08-23 12:33:06.214 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:06.218 INFO  Unknown input. Please try again.
+2022-08-23 12:33:06.221 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:06.225 INFO  Unknown input. Please try again.
+2022-08-23 12:33:06.228 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:14.548 INFO  Sending ChargeCreditCard command, OrderId = b3a53c41-e923-4eb5-bf8c-178cf6ff7210 , Credit Card Number =sasdf
+2022-08-23 12:33:14.641 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:33:21.304 INFO  Immediate Retry is going to retry message 'abe23317-6901-4034-9e86-aefa008327de' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: abe23317-6901-4034-9e86-aefa008327de
+	Transport message ID: e5f0db03-fe72-4626-aa82-7012d5cd7020
+2022-08-23 12:33:21.469 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>68b3f29b-80ca-4434-89a7-fbcaa6c066a1</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.507 INFO  Immediate Retry is going to retry message '649425f1-459d-4f18-ba6c-aefa0076cb50' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 649425f1-459d-4f18-ba6c-aefa0076cb50
+	Transport message ID: edf0fdf0-a796-42d9-9342-3f77b25c2951
+2022-08-23 12:33:21.529 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>8e977eee-f300-41da-9bd9-5fe0ee1bd391</OrderId><CreditCardNumber>jhgf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.563 INFO  Immediate Retry is going to retry message 'd5c5cc44-506d-4afa-bec8-aefa0074a1ff' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: d5c5cc44-506d-4afa-bec8-aefa0074a1ff
+	Transport message ID: f49ed346-6810-49c7-ad5a-5443b7792be3
+2022-08-23 12:33:21.579 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>e6b3143e-6968-4526-b96c-d82dfa6a864b</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>2000-02-02T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.592 INFO  Immediate Retry is going to retry message '5eb1c6a3-981b-43f2-8b88-aefa009d721f' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 5eb1c6a3-981b-43f2-8b88-aefa009d721f
+	Transport message ID: 6672cb75-f4a4-45ef-bf89-6103a1ed894f
+2022-08-23 12:33:21.609 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>b3a53c41-e923-4eb5-bf8c-178cf6ff7210</OrderId><CreditCardNumber>sasdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.625 WARN  Delayed Retry will reschedule message 'abe23317-6901-4034-9e86-aefa008327de' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: abe23317-6901-4034-9e86-aefa008327de
+	Transport message ID: e5f0db03-fe72-4626-aa82-7012d5cd7020
+2022-08-23 12:33:21.660 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>68b3f29b-80ca-4434-89a7-fbcaa6c066a1</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.685 WARN  Delayed Retry will reschedule message '649425f1-459d-4f18-ba6c-aefa0076cb50' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 649425f1-459d-4f18-ba6c-aefa0076cb50
+	Transport message ID: edf0fdf0-a796-42d9-9342-3f77b25c2951
+2022-08-23 12:33:21.705 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>8e977eee-f300-41da-9bd9-5fe0ee1bd391</OrderId><CreditCardNumber>jhgf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.728 WARN  Delayed Retry will reschedule message '5eb1c6a3-981b-43f2-8b88-aefa009d721f' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 5eb1c6a3-981b-43f2-8b88-aefa009d721f
+	Transport message ID: 6672cb75-f4a4-45ef-bf89-6103a1ed894f
+2022-08-23 12:33:21.748 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>b3a53c41-e923-4eb5-bf8c-178cf6ff7210</OrderId><CreditCardNumber>sasdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:21.770 ERROR Moving message 'd5c5cc44-506d-4afa-bec8-aefa0074a1ff' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: d5c5cc44-506d-4afa-bec8-aefa0074a1ff
+	Transport message ID: f49ed346-6810-49c7-ad5a-5443b7792be3
+2022-08-23 12:33:21.800 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>e6b3143e-6968-4526-b96c-d82dfa6a864b</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>2000-02-02T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.184 INFO  Immediate Retry is going to retry message '649425f1-459d-4f18-ba6c-aefa0076cb50' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 649425f1-459d-4f18-ba6c-aefa0076cb50
+	Transport message ID: 4290b964-bd5a-4ef9-bb4e-bcd19ce644c8
+2022-08-23 12:33:47.208 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>8e977eee-f300-41da-9bd9-5fe0ee1bd391</OrderId><CreditCardNumber>jhgf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.229 INFO  Immediate Retry is going to retry message 'abe23317-6901-4034-9e86-aefa008327de' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: abe23317-6901-4034-9e86-aefa008327de
+	Transport message ID: 51d8ea11-77a6-4c49-bfe3-602fc8a3a01d
+2022-08-23 12:33:47.251 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>68b3f29b-80ca-4434-89a7-fbcaa6c066a1</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.262 INFO  Immediate Retry is going to retry message '5eb1c6a3-981b-43f2-8b88-aefa009d721f' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 5eb1c6a3-981b-43f2-8b88-aefa009d721f
+	Transport message ID: c4cfb267-4836-4f1f-8600-f1434da0d05f
+2022-08-23 12:33:47.280 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>b3a53c41-e923-4eb5-bf8c-178cf6ff7210</OrderId><CreditCardNumber>sasdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.293 ERROR Moving message '649425f1-459d-4f18-ba6c-aefa0076cb50' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 649425f1-459d-4f18-ba6c-aefa0076cb50
+	Transport message ID: 4290b964-bd5a-4ef9-bb4e-bcd19ce644c8
+2022-08-23 12:33:47.322 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>8e977eee-f300-41da-9bd9-5fe0ee1bd391</OrderId><CreditCardNumber>jhgf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.333 ERROR Moving message 'abe23317-6901-4034-9e86-aefa008327de' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: abe23317-6901-4034-9e86-aefa008327de
+	Transport message ID: 51d8ea11-77a6-4c49-bfe3-602fc8a3a01d
+2022-08-23 12:33:47.352 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>68b3f29b-80ca-4434-89a7-fbcaa6c066a1</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:33:47.364 ERROR Moving message '5eb1c6a3-981b-43f2-8b88-aefa009d721f' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 5eb1c6a3-981b-43f2-8b88-aefa009d721f
+	Transport message ID: c4cfb267-4836-4f1f-8600-f1434da0d05f
+2022-08-23 12:33:47.388 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>b3a53c41-e923-4eb5-bf8c-178cf6ff7210</OrderId><CreditCardNumber>sasdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:34:20.847 ERROR Error cleaning outbox data
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 122
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:34:57.943 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:34:58.274 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:34:58.612 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:35:05.016 INFO  Sending ChargeCreditCard command, OrderId = 71f02dd7-dcd8-4a48-a61f-f346942062a2 , Credit Card Number =asdf
+2022-08-23 12:35:05.164 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:35:20.085 INFO  Immediate Retry is going to retry message '4d3ad105-a762-4d33-b88c-aefa009df394' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4d3ad105-a762-4d33-b88c-aefa009df394
+	Transport message ID: 1a1e3bd2-a470-4bcb-ae6f-1021be017a42
+2022-08-23 12:35:20.128 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>71f02dd7-dcd8-4a48-a61f-f346942062a2</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:35:20.163 WARN  Delayed Retry will reschedule message '4d3ad105-a762-4d33-b88c-aefa009df394' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4d3ad105-a762-4d33-b88c-aefa009df394
+	Transport message ID: 1a1e3bd2-a470-4bcb-ae6f-1021be017a42
+2022-08-23 12:35:20.204 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>71f02dd7-dcd8-4a48-a61f-f346942062a2</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:35:46.552 INFO  Immediate Retry is going to retry message '4d3ad105-a762-4d33-b88c-aefa009df394' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4d3ad105-a762-4d33-b88c-aefa009df394
+	Transport message ID: 274c32d3-472d-4236-aa57-e0d13301206e
+2022-08-23 12:35:48.988 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>71f02dd7-dcd8-4a48-a61f-f346942062a2</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:35:49.031 ERROR Moving message '4d3ad105-a762-4d33-b88c-aefa009df394' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4d3ad105-a762-4d33-b88c-aefa009df394
+	Transport message ID: 274c32d3-472d-4236-aa57-e0d13301206e
+2022-08-23 12:35:49.077 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>71f02dd7-dcd8-4a48-a61f-f346942062a2</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:36:13.270 ERROR Error cleaning outbox data
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 122
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: -1
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:38:56.211 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:41:19.897 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:41:20.179 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:41:22.140 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:41:32.145 INFO  Sending ChargeCreditCard command, OrderId = d62de618-401b-4c7f-b39e-991a4c4f6483 , Credit Card Number =asdf
+2022-08-23 12:41:32.301 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:41:32.612 INFO  Immediate Retry is going to retry message '460764ce-e887-4dd8-a7fe-aefa009fb93f' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:90e3ba03-1787-4de3-9fb2-c8a9b40ce12f
+Error Number:233,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 233
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 460764ce-e887-4dd8-a7fe-aefa009fb93f
+	Transport message ID: eeda386d-f1d0-4fbe-ab6b-8a98795d44c5
+2022-08-23 12:41:32.668 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d62de618-401b-4c7f-b39e-991a4c4f6483</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:41:32.715 WARN  Delayed Retry will reschedule message '460764ce-e887-4dd8-a7fe-aefa009fb93f' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:90e3ba03-1787-4de3-9fb2-c8a9b40ce12f
+Error Number:233,State:0,Class:20
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 233
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 460764ce-e887-4dd8-a7fe-aefa009fb93f
+	Transport message ID: eeda386d-f1d0-4fbe-ab6b-8a98795d44c5
+2022-08-23 12:41:32.746 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d62de618-401b-4c7f-b39e-991a4c4f6483</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:41:43.367 INFO  Immediate Retry is going to retry message '460764ce-e887-4dd8-a7fe-aefa009fb93f' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:9ea1501d-a3c7-43b4-b7ff-5cca54789078
+Error Number:18456,State:1,Class:14
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 18456
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 460764ce-e887-4dd8-a7fe-aefa009fb93f
+	Transport message ID: e50bc6dc-bfe6-401b-88ce-2255c49183c9
+2022-08-23 12:41:47.870 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d62de618-401b-4c7f-b39e-991a4c4f6483</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:41:47.905 ERROR Moving message '460764ce-e887-4dd8-a7fe-aefa009fb93f' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 75
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:9ea1501d-a3c7-43b4-b7ff-5cca54789078
+Error Number:18456,State:1,Class:14
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 18456
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 460764ce-e887-4dd8-a7fe-aefa009fb93f
+	Transport message ID: e50bc6dc-bfe6-401b-88ce-2255c49183c9
+2022-08-23 12:41:47.949 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d62de618-401b-4c7f-b39e-991a4c4f6483</OrderId><CreditCardNumber>asdf</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:42:20.524 ERROR Error cleaning outbox data
+System.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Extensions.OpenConnection(DbConnection connection) in /_/src/SqlPersistence/Extensions.cs:line 46
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 122
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+ClientConnectionId:d3dc8fce-edbf-4bbd-87a0-97d9298df84b
+Error Number:18456,State:1,Class:14
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 18456
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:43:21.623 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:44:04.112 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:47:51.307 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:47:51.613 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:47:53.569 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:48:09.250 INFO  Sending ChargeCreditCard command, OrderId = d05fa3df-d83f-41af-bc8d-c28f391756f0 , Credit Card Number =sdgd
+2022-08-23 12:48:09.394 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:48:09.997 INFO  Immediate Retry is going to retry message '4a878fcd-2e6d-4fb0-8010-aefa00a18a9a' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 86
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4a878fcd-2e6d-4fb0-8010-aefa00a18a9a
+	Transport message ID: 1ad56b24-8f5e-4e08-b160-8a3726ccfc9c
+2022-08-23 12:48:10.041 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d05fa3df-d83f-41af-bc8d-c28f391756f0</OrderId><CreditCardNumber>sdgd</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:48:10.070 WARN  Delayed Retry will reschedule message '4a878fcd-2e6d-4fb0-8010-aefa00a18a9a' after a delay of 00:00:10 because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 86
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4a878fcd-2e6d-4fb0-8010-aefa00a18a9a
+	Transport message ID: 1ad56b24-8f5e-4e08-b160-8a3726ccfc9c
+2022-08-23 12:48:10.098 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d05fa3df-d83f-41af-bc8d-c28f391756f0</OrderId><CreditCardNumber>sdgd</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:48:21.831 INFO  Immediate Retry is going to retry message '4a878fcd-2e6d-4fb0-8010-aefa00a18a9a' because of an exception:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 86
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4a878fcd-2e6d-4fb0-8010-aefa00a18a9a
+	Transport message ID: 15f9c124-e4c0-4b0a-b8a9-04bc0d2efcab
+2022-08-23 12:48:38.858 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d05fa3df-d83f-41af-bc8d-c28f391756f0</OrderId><CreditCardNumber>sdgd</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:48:38.880 ERROR Moving message '4a878fcd-2e6d-4fb0-8010-aefa00a18a9a' to the error queue 'error' because processing failed due to an exception:
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at OutboxPersister.Get(String messageId, ContextBag context) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 86
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 27
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+	Message ID: 4a878fcd-2e6d-4fb0-8010-aefa00a18a9a
+	Transport message ID: 15f9c124-e4c0-4b0a-b8a9-04bc0d2efcab
+2022-08-23 12:48:38.913 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><ChargeCreditCard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/ClientUI"><OrderId>d05fa3df-d83f-41af-bc8d-c28f391756f0</OrderId><CreditCardNumber>sdgd</CreditCardNumber><ExpireDate>1111-01-01T00:00:00</ExpireDate></ChargeCreditCard>
+2022-08-23 12:48:51.936 ERROR Error cleaning outbox data
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+delete top (@BatchSize) from [dbo].[Billing_OutboxData]
+where Dispatched = 'true' and
+      DispatchedAt < @DispatchedBefore
+ ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 132
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+2022-08-23 12:49:51.959 ERROR Error cleaning outbox data
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+delete top (@BatchSize) from [dbo].[Billing_OutboxData]
+where Dispatched = 'true' and
+      DispatchedAt < @DispatchedBefore
+ ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 132
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+2022-08-23 12:50:51.990 ERROR Error cleaning outbox data
+System.Exception: Failed to ExecuteNonQuery. CommandText:
+
+delete top (@BatchSize) from [dbo].[Billing_OutboxData]
+where Dispatched = 'true' and
+      DispatchedAt < @DispatchedBefore
+ ---> System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Billing_OutboxData'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 107
+ClientConnectionId:bde41a12-3281-4de2-93ee-9b04311e0219
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Extensions.ExecuteNonQueryEx(DbCommand command, CancellationToken cancellationToken) in /_/src/SqlPersistence/Extensions.cs:line 112
+   at OutboxPersister.RemoveEntriesOlderThan(DateTime dateTime, CancellationToken cancellationToken) in /_/src/SqlPersistence/Outbox/OutboxPersister.cs:line 132
+   at OutboxCleaner.<>c__DisplayClass1_0.<<OnStart>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/OutboxCleaner.cs:line 26
+--- End of stack trace from previous location ---
+   at AsyncTimer.<>c__DisplayClass0_0.<<Start>b__0>d.MoveNext() in /_/src/SqlPersistence/Outbox/AsyncTimer.cs:line 20
+2022-08-23 12:51:57.572 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:53:32.281 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:53:32.612 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:56:07.250 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:56:07.901 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:56:08.133 WARN  Maximum connection pooling value (Max Pool Size=N) is not configured on the provided connection string. The default value (100) will be used.
+2022-08-23 12:56:08.815 ERROR Exception thrown while moving matured delayed messages
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing.Delayed'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DelayedMessageTable.cs:line 54
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.ExecuteOnce(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 72
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessagesAndSwallowExceptions(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 46
+ClientConnectionId:a5ee6505-b04f-426c-9dd6-3440adf0a250
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:56:08.859 WARN  Table Billing@[dbo]@[CoronaDB] does not contain non-clustered index 'Index_RowVersion'.
+Migrating to this non-clustered index improves performance for send and receive operations.
+2022-08-23 12:56:08.958 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:56:08.988 WARN  Sql peek operation failed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.SqlCommandExtensions.ExecuteScalarAsyncOrDefault[TScalar](SqlCommand command, String commandName, Action`1 onUnexpectedValueMessage, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Queuing/SqlCommandExtensions.cs:line 16
+   at NServiceBus.Transport.SqlServer.TableBasedQueue.TryPeek(SqlConnection connection, SqlTransaction transaction, CancellationToken token, Int32 timeoutInSeconds) in /_/src/NServiceBus.Transport.SqlServer/Queuing/TableBasedQueue.cs:line 43
+   at NServiceBus.Transport.SqlServer.QueuePeeker.Peek(TableBasedQueue inputQueue, RepeatedFailuresOverTimeCircuitBreaker circuitBreaker, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Receiving/QueuePeeker.cs:line 42
+ClientConnectionId:154f5266-cdcb-4ed8-a839-8bc00fd4db09
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:56:09.008 WARN  The circuit breaker for SqlPeek is now in the armed state
+2022-08-23 12:56:11.035 WARN  Sql peek operation failed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.SqlCommandExtensions.ExecuteScalarAsyncOrDefault[TScalar](SqlCommand command, String commandName, Action`1 onUnexpectedValueMessage, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Queuing/SqlCommandExtensions.cs:line 16
+   at NServiceBus.Transport.SqlServer.TableBasedQueue.TryPeek(SqlConnection connection, SqlTransaction transaction, CancellationToken token, Int32 timeoutInSeconds) in /_/src/NServiceBus.Transport.SqlServer/Queuing/TableBasedQueue.cs:line 43
+   at NServiceBus.Transport.SqlServer.QueuePeeker.Peek(TableBasedQueue inputQueue, RepeatedFailuresOverTimeCircuitBreaker circuitBreaker, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Receiving/QueuePeeker.cs:line 42
+ClientConnectionId:154f5266-cdcb-4ed8-a839-8bc00fd4db09
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:56:13.885 ERROR Exception thrown while moving matured delayed messages
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing.Delayed'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DelayedMessageTable.cs:line 54
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.ExecuteOnce(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 72
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessagesAndSwallowExceptions(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 46
+ClientConnectionId:154f5266-cdcb-4ed8-a839-8bc00fd4db09
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:57:06.954 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:57:07.470 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 12:57:08.255 ERROR Exception thrown while moving matured delayed messages
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing.Delayed'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DelayedMessageTable.cs:line 54
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.ExecuteOnce(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 72
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessagesAndSwallowExceptions(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 46
+ClientConnectionId:cf3244fb-0962-4aeb-a805-144e9b82306e
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:57:08.311 WARN  Table Billing@[dbo]@[CoronaDB] does not contain non-clustered index 'Index_RowVersion'.
+Migrating to this non-clustered index improves performance for send and receive operations.
+2022-08-23 12:57:08.373 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 12:57:08.394 WARN  Sql peek operation failed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.SqlCommandExtensions.ExecuteScalarAsyncOrDefault[TScalar](SqlCommand command, String commandName, Action`1 onUnexpectedValueMessage, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Queuing/SqlCommandExtensions.cs:line 16
+   at NServiceBus.Transport.SqlServer.TableBasedQueue.TryPeek(SqlConnection connection, SqlTransaction transaction, CancellationToken token, Int32 timeoutInSeconds) in /_/src/NServiceBus.Transport.SqlServer/Queuing/TableBasedQueue.cs:line 43
+   at NServiceBus.Transport.SqlServer.QueuePeeker.Peek(TableBasedQueue inputQueue, RepeatedFailuresOverTimeCircuitBreaker circuitBreaker, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Receiving/QueuePeeker.cs:line 42
+ClientConnectionId:3891db5a-7bb1-40fc-991f-36175986444b
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:57:08.409 WARN  The circuit breaker for SqlPeek is now in the armed state
+2022-08-23 12:57:10.438 WARN  Sql peek operation failed
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.SqlCommandExtensions.ExecuteScalarAsyncOrDefault[TScalar](SqlCommand command, String commandName, Action`1 onUnexpectedValueMessage, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Queuing/SqlCommandExtensions.cs:line 16
+   at NServiceBus.Transport.SqlServer.TableBasedQueue.TryPeek(SqlConnection connection, SqlTransaction transaction, CancellationToken token, Int32 timeoutInSeconds) in /_/src/NServiceBus.Transport.SqlServer/Queuing/TableBasedQueue.cs:line 43
+   at NServiceBus.Transport.SqlServer.QueuePeeker.Peek(TableBasedQueue inputQueue, RepeatedFailuresOverTimeCircuitBreaker circuitBreaker, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/Receiving/QueuePeeker.cs:line 42
+ClientConnectionId:3891db5a-7bb1-40fc-991f-36175986444b
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:57:13.314 ERROR Exception thrown while moving matured delayed messages
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'CoronaDB.dbo.Billing.Delayed'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DelayedMessageTable.cs:line 54
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.ExecuteOnce(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 72
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessagesAndSwallowExceptions(CancellationToken moveDelayedMessagesCancellationToken) in /_/src/NServiceBus.Transport.SqlServer/DelayedDelivery/DueDelayedMessageProcessor.cs:line 46
+ClientConnectionId:3891db5a-7bb1-40fc-991f-36175986444b
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2095
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2022-08-23 12:59:58.695 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 12:59:59.150 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 13:00:39.356 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:00:39.691 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 13:01:17.344 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:01:17.619 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 13:01:35.765 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:01:36.083 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 13:03:55.449 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:07:37.605 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:08:00.968 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:09:37.034 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:10:11.190 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:27:08.301 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:27:58.874 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:28:22.223 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:28:52.015 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:30:22.874 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 13:30:38.497 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 13:30:50.250 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 13:31:07.194 INFO  Sending ChargeCreditCard command, OrderId = 65892fad-36e0-4e34-9bd9-d2e503bc9159 , Credit Card Number =asdfasdf
+2022-08-23 13:31:12.304 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 13:31:12.547 INFO  Received Credit Card Information, CreditCardNumber = asdfasdf
+2022-08-23 15:14:09.103 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 15:14:09.333 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:14:14.155 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 15:15:02.439 INFO  Sending ChargeCreditCard command, OrderId = 7e5360ce-1948-4d16-b9fd-e376481fd709 , Credit Card Number =asdf
+2022-08-23 15:15:02.559 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-23 15:15:02.672 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-23 15:23:12.145 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 15:23:12.415 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:24:57.950 INFO  Initiating shutdown.
+2022-08-23 15:24:57.986 INFO  Shutdown complete.
+2022-08-23 15:33:01.309 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 15:33:01.591 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 15:33:16.442 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-23 16:50:03.893 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 16:50:04.277 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 16:50:13.829 INFO  Received Credit Card Information, CreditCardNumber = asdf
+2022-08-23 16:56:34.194 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 16:57:24.282 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 16:57:24.537 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 16:57:25.067 INFO  Immediate Retry is going to retry message 'd5719bb6-51a2-4aa6-9420-aefa00e60048' because of an exception:
+System.InvalidOperationException: No handlers could be found for message type: Billing.Messages.tt
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 35
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: d5719bb6-51a2-4aa6-9420-aefa00e60048
+	Transport message ID: 9adb9bba-c915-4df3-82d5-e46581b8166e
+2022-08-23 16:57:25.252 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Billing.Messages"><OrderId>sadfas</OrderId><CreditCardNumber>asdfasfd</CreditCardNumber></tt>
+2022-08-23 16:57:25.283 WARN  Delayed Retry will reschedule message 'd5719bb6-51a2-4aa6-9420-aefa00e60048' after a delay of 00:00:10 because of an exception:
+System.InvalidOperationException: No handlers could be found for message type: Billing.Messages.tt
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 35
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: d5719bb6-51a2-4aa6-9420-aefa00e60048
+	Transport message ID: 9adb9bba-c915-4df3-82d5-e46581b8166e
+2022-08-23 16:57:25.325 FATAL Message sent to Delayed Retries.
+        RetryAttempt:1
+        Body:
+        <?xml version="1.0"?><tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Billing.Messages"><OrderId>sadfas</OrderId><CreditCardNumber>asdfasfd</CreditCardNumber></tt>
+2022-08-23 16:57:37.003 INFO  Immediate Retry is going to retry message 'd5719bb6-51a2-4aa6-9420-aefa00e60048' because of an exception:
+System.InvalidOperationException: No handlers could be found for message type: Billing.Messages.tt
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 35
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: d5719bb6-51a2-4aa6-9420-aefa00e60048
+	Transport message ID: 36505fb6-6bf4-4122-8e84-8138c4750373
+2022-08-23 16:57:42.607 FATAL Message sent to Immediate Retry.
+        RetryAttempt:0
+        Body:
+        <?xml version="1.0"?><tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Billing.Messages"><OrderId>sadfas</OrderId><CreditCardNumber>asdfasfd</CreditCardNumber></tt>
+2022-08-23 16:57:42.630 ERROR Moving message 'd5719bb6-51a2-4aa6-9420-aefa00e60048' to the error queue 'error' because processing failed due to an exception:
+System.InvalidOperationException: No handlers could be found for message type: Billing.Messages.tt
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 35
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: d5719bb6-51a2-4aa6-9420-aefa00e60048
+	Transport message ID: 36505fb6-6bf4-4122-8e84-8138c4750373
+2022-08-23 16:57:42.671 FATAL Message sent to error queue.
+        Body:
+        <?xml version="1.0"?><tt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Billing.Messages"><OrderId>sadfas</OrderId><CreditCardNumber>asdfasfd</CreditCardNumber></tt>
+2022-08-23 17:00:25.658 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 17:00:26.088 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 17:00:26.709 INFO  tt received
+2022-08-23 17:03:14.051 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 17:03:14.439 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 17:03:15.044 INFO  tt received
+2022-08-23 17:04:57.693 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 17:04:57.997 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:28:48.457 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:28:48.750 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:31:33.546 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:31:33.795 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:35:23.941 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:35:24.237 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:40:01.649 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:40:02.094 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:41:25.334 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:41:25.606 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:44:21.713 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:44:22.093 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:44:45.581 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:44:45.864 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:45:58.524 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:45:58.786 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:49:03.591 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:49:04.014 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-23 18:49:25.634 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-23 18:49:25.943 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.

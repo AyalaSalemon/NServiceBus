@@ -1,0 +1,36 @@
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.deps.json
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\ref\Billing.Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.pdb
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.AssemblyReference.cache
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfoInputs.cache
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfo.cs
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.CoreCompileInputs.cache
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\ref\Billing.Messages.dll
+C:\BootCamp\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.pdb
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.deps.json
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.dll
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.pdb
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.AssemblyReference.cache
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfoInputs.cache
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfo.cs
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.CoreCompileInputs.cache
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.dll
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\refint\Billing.Messages.dll
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.pdb
+C:\Users\א\Downloads\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\ref\Billing.Messages.dll
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.deps.json
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.dll
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\bin\Debug\net6.0\Billing.Messages.pdb
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.AssemblyReference.cache
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfoInputs.cache
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.AssemblyInfo.cs
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.csproj.CoreCompileInputs.cache
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.dll
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\refint\Billing.Messages.dll
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\Billing.Messages.pdb
+C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Billing.Messages\obj\Debug\net6.0\ref\Billing.Messages.dll

@@ -1,0 +1,64 @@
+﻿2022-08-21 14:44:44.450 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 14:44:44.785 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 14:44:45.333 INFO  Initiating shutdown.
+2022-08-21 14:44:45.395 INFO  Shutdown complete.
+2022-08-21 14:59:47.378 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 14:59:47.756 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 14:59:48.337 INFO  Initiating shutdown.
+2022-08-21 14:59:48.382 INFO  Shutdown complete.
+2022-08-21 17:06:28.054 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 17:06:29.405 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 17:06:30.060 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:06:46.736 INFO  Sending ChargeCreditCard command, OrderId = 726be14f-800a-4247-afe8-5acceaa95176 , Credit Card Number =123456789
+2022-08-21 17:06:47.111 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:06:47.448 INFO  Received Credit Card Information, CreditCardNumber = 123456789
+2022-08-21 17:23:28.530 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 17:23:28.956 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 17:23:29.518 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:23:29.524 INFO  Unknown input. Please try again.
+2022-08-21 17:23:29.541 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:23:38.385 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:28:45.328 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 17:28:45.854 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 17:28:46.356 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:28:46.364 INFO  Unknown input. Please try again.
+2022-08-21 17:28:46.378 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:29:32.578 INFO  Sending ChargeCreditCard command, OrderId = a1503615-17ae-4750-ba9f-23585030631f , Credit Card Number =1234
+2022-08-21 17:29:33.001 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:29:33.305 INFO  Received Credit Card Information, CreditCardNumber = 1234
+2022-08-21 17:32:58.272 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 17:32:58.599 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 17:32:59.374 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:32:59.383 INFO  Unknown input. Please try again.
+2022-08-21 17:32:59.387 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:33:14.542 INFO  Sending ChargeCreditCard command, OrderId = 66188697-af19-483a-b2d9-905dd95c6947 , Credit Card Number =1111
+2022-08-21 17:33:14.857 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 17:33:15.098 INFO  Received Credit Card Information, CreditCardNumber = 1111
+2022-08-21 18:37:03.557 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 18:37:03.896 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:37:04.357 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:37:04.366 INFO  Unknown input. Please try again.
+2022-08-21 18:37:04.375 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:37:13.094 INFO  Sending ChargeCreditCard command, OrderId = 20ee53ae-5baf-479c-ae21-203f70189461 , Credit Card Number =00000
+2022-08-21 18:37:13.374 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:37:13.678 INFO  Received Credit Card Information, CreditCardNumber = 00000
+2022-08-21 18:37:16.690 INFO  Initiating shutdown.
+2022-08-21 18:37:16.754 INFO  Shutdown complete.
+2022-08-21 18:58:30.797 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 18:58:30.984 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:58:31.280 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:58:43.307 INFO  Sending ChargeCreditCard command, OrderId = b40f0e24-a2f4-4cda-98af-4b4697094e7e , Credit Card Number =123
+2022-08-21 18:58:43.469 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:58:43.615 INFO  Received Credit Card Information, CreditCardNumber = 123
+2022-08-21 18:58:53.900 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 18:58:54.085 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:58:54.629 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:59:02.206 INFO  Sending ChargeCreditCard command, OrderId = 4643e662-49f3-42e2-af10-03e3e375f659 , Credit Card Number =111
+2022-08-21 18:59:02.339 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:59:02.481 INFO  Received Credit Card Information, CreditCardNumber = 111
+2022-08-21 19:25:28.157 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\NServiceBass\bin\Debug\net6.0\' with level Info
+2022-08-21 19:25:28.396 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 19:25:29.023 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 19:25:39.359 INFO  Sending ChargeCreditCard command, OrderId = 7686da6b-8f0d-4a6a-bbce-3061dd89b0c7 , Credit Card Number =000
+2022-08-21 19:25:39.521 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 19:25:39.644 INFO  Received Credit Card Information, CreditCardNumber = 000

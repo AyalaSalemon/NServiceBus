@@ -1,0 +1,3 @@
+﻿2022-08-24 12:54:45.767 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-24 12:54:46.159 INFO  Auditing processed messages to 'audit'
+2022-08-24 12:54:46.214 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.

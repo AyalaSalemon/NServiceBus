@@ -1,0 +1,107 @@
+﻿2022-08-25 13:00:14.692 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 13:00:14.905 INFO  Auditing processed messages to 'audit'
+2022-08-25 13:00:14.936 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 13:33:17.733 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 13:33:18.281 INFO  Auditing processed messages to 'audit'
+2022-08-25 13:33:18.322 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:30:25.968 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 17:30:26.178 INFO  Auditing processed messages to 'audit'
+2022-08-25 17:30:26.200 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:32:56.981 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 17:32:57.286 INFO  Auditing processed messages to 'audit'
+2022-08-25 17:32:57.327 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:34:42.860 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 17:35:14.224 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 17:35:14.711 INFO  Auditing processed messages to 'audit'
+2022-08-25 17:35:14.782 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 17:56:43.895 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 17:56:44.358 INFO  Auditing processed messages to 'audit'
+2022-08-25 17:56:44.432 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:00:19.634 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:00:20.137 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:00:20.187 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:04:07.034 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:04:07.344 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:04:07.380 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:05:32.368 INFO  Received Credit Card Charged, OrderId = 1fde8cd4-6edc-47f1-97a1-1c04b21d096b - Sending Receipt...
+2022-08-25 18:09:49.265 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:09:49.759 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:09:49.802 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:10:17.340 INFO  Received Credit Card Charged, OrderId = abb44696-b59d-49e8-98bb-0c414c620e5d - Sending Receipt...
+2022-08-25 18:12:40.173 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:12:40.555 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:12:40.592 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:12:46.361 INFO  Received Credit Card Charged, OrderId = 938f75a8-8111-4a9b-bfef-56379a10382d - Sending Receipt...
+2022-08-25 18:21:26.741 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:21:27.047 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:21:27.071 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:21:39.078 INFO  Received Credit Card Charged, OrderId = 73290de1-5f0e-4e8e-8f44-8cb4a5a496fe - Sending Receipt...
+2022-08-25 18:26:40.891 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:26:41.286 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:26:41.360 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:24.370 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:27:24.948 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:27:24.993 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:27:57.691 INFO  Received Credit Card Charged, OrderId = 1ee54365-8642-4ae7-84ca-57135a9fda52 - Sending Receipt...
+2022-08-25 18:37:06.682 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:37:07.028 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:37:07.063 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:37:16.961 INFO  Received Credit Card Charged, OrderId = 84d36c7b-59dc-416e-ba64-1d55da73f1ec - Sending Receipt...
+2022-08-25 18:39:02.607 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:39:02.970 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:39:03.018 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:39:10.890 INFO  Received Credit Card Charged, OrderId = a2eaebdf-8d85-44c8-b091-0bfbe372ddae - Sending Receipt...
+2022-08-25 18:52:52.323 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 18:52:52.805 INFO  Auditing processed messages to 'audit'
+2022-08-25 18:52:52.857 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 18:52:53.579 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 18:53:02.014 INFO  Received Credit Card Charged, OrderId = a228e8cb-e162-47fb-bb51-bc91735239f1 - Sending Receipt...
+2022-08-25 20:57:27.765 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 20:57:28.130 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:57:28.165 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:57:28.969 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:57:50.463 INFO  Received CreditCardCharged, OrderId = dc514509-3d00-4e32-8c2b-ba8a233d6910 - Charging credit card...
+2022-08-25 20:57:50.468 INFO  Credit Card Number is: **** **** **** 7654
+2022-08-25 20:57:50.471 INFO  Publishing Receipt Sent
+2022-08-25 20:58:49.996 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 20:58:50.389 INFO  Auditing processed messages to 'audit'
+2022-08-25 20:58:50.426 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 20:58:51.208 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 20:59:02.487 INFO  Received CreditCardCharged, OrderId = 3fb5b707-6199-4bcb-9300-92667bd632e0 - Charging credit card...
+2022-08-25 20:59:02.490 INFO  Credit Card Number is: **** **** **** 1234
+2022-08-25 20:59:02.493 INFO  Publishing Receipt Sent
+2022-08-25 21:02:16.516 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 21:02:16.917 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:02:16.953 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:02:17.587 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:02:31.033 INFO  Received CreditCardCharged, OrderId = 8a9c0815-6958-4f7f-8ba3-036d39225d15 - Charging credit card...
+2022-08-25 21:02:31.038 INFO  Credit Card Number is: **** **** **** 9876
+2022-08-25 21:02:31.041 INFO  Publishing Receipt Sent
+2022-08-25 21:03:58.970 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 21:03:59.593 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:03:59.638 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:04:00.476 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:04:06.079 INFO  Received CreditCardCharged, OrderId = 85f685c0-12e0-4b2f-9912-dec1fa9d6170 - Charging credit card...
+2022-08-25 21:04:06.084 INFO  Credit Card Number is: **** **** **** 1234
+2022-08-25 21:04:06.087 INFO  Publishing Receipt Sent
+2022-08-25 21:05:25.396 INFO  Logging to 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 21:05:25.940 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:05:25.972 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:05:26.607 INFO  Executing 'C:\Users\א\Downloads\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:05:34.368 INFO  Received CreditCardCharged, OrderId = 1bf760cf-1c54-4df4-ab40-a0328b33f59a - Charging credit card...
+2022-08-25 21:05:34.371 INFO  Credit Card Number is: **** **** **** 4321
+2022-08-25 21:05:34.374 INFO  Publishing Receipt Sent
+2022-08-25 21:07:22.601 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 21:07:23.807 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:07:23.995 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:07:25.080 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:07:26.634 INFO  Received CreditCardCharged, OrderId = 5d21167f-566c-461f-9042-85f74fd6fafe - Charging credit card...
+2022-08-25 21:07:26.638 INFO  Credit Card Number is: **** **** **** 9876
+2022-08-25 21:07:26.642 INFO  Publishing Receipt Sent
+2022-08-25 21:09:50.396 INFO  Logging to 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-25 21:09:50.884 INFO  Auditing processed messages to 'audit'
+2022-08-25 21:09:50.908 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-25 21:09:51.619 INFO  Executing 'C:\Users\א\Desktop\bootcamp\week 8\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql'
+2022-08-25 21:09:57.809 INFO  Received CreditCardCharged, OrderId = 4b8ca6ea-fbe5-4812-9be2-075055ca4761 - Charging credit card...
+2022-08-25 21:09:57.814 INFO  Credit Card Number is: **** **** **** 1234
+2022-08-25 21:09:57.818 INFO  Publishing Receipt Sent

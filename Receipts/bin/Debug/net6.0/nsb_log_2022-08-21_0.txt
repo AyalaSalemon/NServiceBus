@@ -1,0 +1,21 @@
+﻿2022-08-21 18:37:29.085 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-21 18:37:29.375 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:37:29.794 INFO  Press 'C' to charge your card, or 'Q' to quit.
+2022-08-21 18:38:57.289 INFO  Initiating shutdown.
+2022-08-21 18:38:57.319 INFO  Shutdown complete.
+2022-08-21 18:41:07.285 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-21 18:41:07.884 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:58:16.071 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-21 18:58:16.273 INFO  Auditing processed messages to 'audit'
+2022-08-21 18:58:16.348 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:58:22.993 INFO  Initiating shutdown.
+2022-08-21 18:58:23.023 INFO  Shutdown complete.
+2022-08-21 18:59:11.364 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-21 18:59:11.513 INFO  Auditing processed messages to 'audit'
+2022-08-21 18:59:11.547 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 18:59:11.992 INFO  Received Credit Card Chargeg, OrderId = 4643e662-49f3-42e2-af10-03e3e375f659 - Sending Receipt...
+2022-08-21 18:59:12.069 INFO  Received Credit Card Chargeg, OrderId = b40f0e24-a2f4-4cda-98af-4b4697094e7e - Sending Receipt...
+2022-08-21 19:25:51.144 INFO  Logging to 'C:\BootCamp\NServiceBass\NServiceBass\Receipts\bin\Debug\net6.0\' with level Info
+2022-08-21 19:25:51.310 INFO  Auditing processed messages to 'audit'
+2022-08-21 19:25:51.346 INFO  No valid license could be found. Falling back to trial license with start date '2022-08-21'.
+2022-08-21 19:25:52.263 INFO  Received Credit Card Charged, OrderId = 7686da6b-8f0d-4a6a-bbce-3061dd89b0c7 - Sending Receipt...
